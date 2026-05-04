@@ -13,19 +13,29 @@
  *  limitations under the License.
  */
 
-package alemiz.sgu.nukkit.events;
+package alemiz.sgu.powernukkitx.events;
 
-import alemiz.sgu.nukkit.StarGateUniverse;
+import alemiz.sgu.powernukkitx.StarGateUniverse;
 import alemiz.stargate.client.StarGateClient;
 import cn.nukkit.event.Cancellable;
 import cn.nukkit.event.HandlerList;
 
-public class ClientCreationEvent extends ClientEvent implements Cancellable {
+public class ClientAuthenticatedEvent extends ClientEvent implements Cancellable {
 
     private static final HandlerList handlers = new HandlerList();
 
-    public ClientCreationEvent(StarGateClient client, StarGateUniverse plugin) {
+    private String cancelMessage = "Authentication was canceled!";
+
+    public ClientAuthenticatedEvent(StarGateClient client, StarGateUniverse plugin) {
         super(client, plugin);
+    }
+
+    public void setCancelMessage(String cancelMessage) {
+        this.cancelMessage = cancelMessage;
+    }
+
+    public String getCancelMessage() {
+        return this.cancelMessage;
     }
 
     public static HandlerList getHandlers() {

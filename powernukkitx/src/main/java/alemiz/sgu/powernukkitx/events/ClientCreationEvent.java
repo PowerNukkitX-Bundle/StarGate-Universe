@@ -13,32 +13,22 @@
  *  limitations under the License.
  */
 
-package alemiz.sgu.nukkit.events;
+package alemiz.sgu.powernukkitx.events;
 
-import alemiz.sgu.nukkit.StarGateUniverse;
-import alemiz.stargate.client.ClientSession;
+import alemiz.sgu.powernukkitx.StarGateUniverse;
 import alemiz.stargate.client.StarGateClient;
-import cn.nukkit.event.Event;
+import cn.nukkit.event.Cancellable;
+import cn.nukkit.event.HandlerList;
 
-public class ClientEvent extends Event {
+public class ClientCreationEvent extends ClientEvent implements Cancellable {
 
-    private final StarGateUniverse plugin;
-    private final StarGateClient client;
+    private static final HandlerList handlers = new HandlerList();
 
-    public ClientEvent(StarGateClient client, StarGateUniverse plugin){
-        this.client = client;
-        this.plugin = plugin;
+    public ClientCreationEvent(StarGateClient client, StarGateUniverse plugin) {
+        super(client, plugin);
     }
 
-    public StarGateClient getClient() {
-        return this.client;
-    }
-
-    public ClientSession getSession() {
-        return this.client.getSession();
-    }
-
-    public StarGateUniverse getPlugin() {
-        return this.plugin;
+    public static HandlerList getHandlers() {
+        return handlers;
     }
 }

@@ -13,9 +13,9 @@
  *  limitations under the License.
  */
 
-package alemiz.sgu.nukkit.handler;
+package alemiz.sgu.powernukkitx.handler;
 
-import alemiz.sgu.nukkit.StarGateUniverse;
+import alemiz.sgu.powernukkitx.StarGateUniverse;
 import alemiz.stargate.client.ClientPacketHandler;
 import alemiz.stargate.client.ClientSession;
 

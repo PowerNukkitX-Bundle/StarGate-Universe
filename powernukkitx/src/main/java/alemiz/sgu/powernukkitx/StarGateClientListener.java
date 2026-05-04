@@ -13,12 +13,12 @@
  *  limitations under the License.
  */
 
-package alemiz.sgu.nukkit;
+package alemiz.sgu.powernukkitx;
 
-import alemiz.sgu.nukkit.events.ClientAuthenticatedEvent;
-import alemiz.sgu.nukkit.events.ClientConnectedEvent;
-import alemiz.sgu.nukkit.events.ClientDisconnectedEvent;
-import alemiz.sgu.nukkit.handler.PacketHandler;
+import alemiz.sgu.powernukkitx.events.ClientAuthenticatedEvent;
+import alemiz.sgu.powernukkitx.events.ClientConnectedEvent;
+import alemiz.sgu.powernukkitx.events.ClientDisconnectedEvent;
+import alemiz.sgu.powernukkitx.handler.PacketHandler;
 import alemiz.stargate.client.ClientSession;
 
 import java.net.InetSocketAddress;
