@@ -23,8 +23,8 @@ import alemiz.stargate.protocol.*;
 import alemiz.stargate.protocol.types.HandshakeData;
 import alemiz.stargate.utils.ServerLoader;
 import alemiz.stargate.utils.StarGateLogger;
-import cn.nukkit.Player;
-import cn.nukkit.plugin.PluginBase;
+import org.powernukkitx.Player;
+import org.powernukkitx.plugin.PluginBase;
 
 import java.net.InetSocketAddress;
 import java.util.ArrayList;

@@ -17,8 +17,8 @@ package alemiz.sgu.powernukkitx.events;
 
 import alemiz.sgu.powernukkitx.StarGateUniverse;
 import alemiz.stargate.client.StarGateClient;
-import cn.nukkit.event.Cancellable;
-import cn.nukkit.event.HandlerList;
+import org.powernukkitx.event.Cancellable;
+import org.powernukkitx.event.HandlerList;
 
 public class ClientAuthenticatedEvent extends ClientEvent implements Cancellable {
 

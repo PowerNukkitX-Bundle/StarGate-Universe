@@ -18,7 +18,7 @@ package alemiz.sgu.powernukkitx.events;
 import alemiz.sgu.powernukkitx.StarGateUniverse;
 import alemiz.stargate.client.ClientSession;
 import alemiz.stargate.client.StarGateClient;
-import cn.nukkit.event.Event;
+import org.powernukkitx.event.Event;
 
 public class ClientEvent extends Event {
 
